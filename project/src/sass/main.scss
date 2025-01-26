@@ -368,7 +368,8 @@ body {
 
 	&__box {
 		// margin-left: 8em;
-		margin-left: 2em;
+		// margin-left: 2em;
+		margin-bottom: 3em;
 
 		&-name {
 			text-align: center;
@@ -381,8 +382,8 @@ body {
 		&-img {
 			// width: 35rem;
 			// height: 60%;
-			width: 35rem;
-			height: 35rem;
+			width: 30rem;
+			height: 30rem;
 			border-radius: 8px;
 			overflow: hidden;
 			margin-bottom: 1em;
@@ -392,7 +393,7 @@ body {
 		&-icons {
 			position: absolute;
 			background-color: #fff;
-			width: 225px;
+			width: 200px;
 			padding: 12px 45px;
 			margin-top: -40px;
 			border-radius: 50px;
@@ -400,6 +401,76 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+		}
+	}
+}
+
+.contact {
+	position: relative;
+	background-color: #27223f;
+	padding: 2em;
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		&-left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&-img {
+				width: 100%;
+				height: 40%;
+			}
+		}
+
+		&-right {
+			display: flex;
+			flex-direction: column;
+			margin-top: 2em;
+			width: 100%;
+
+			&-title {
+				text-align: center;
+				color: #fff;
+				font-size: 4rem;
+				text-transform: uppercase;
+				margin-bottom: 1em;
+			}
+
+			form {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			&-input {
+				width: 100%;
+				padding: 0.5em;
+				margin-top: 0.5em;
+				margin-bottom: 1em;
+			}
+
+			&-textarea {
+				width: 100%;
+				padding: 0.5em;
+				margin-top: 0.5em;
+				margin-bottom: 1em;
+			}
+
+			&-btn {
+				display: flex;
+				align-self: center;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+				background-color: red;
+				height: 3rem;
+				font-size: 2rem;
+				padding: 5px 65px;
+			}
 		}
 	}
 }
