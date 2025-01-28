@@ -306,45 +306,6 @@ body {
 	}
 }
 
-@media (min-width: 1024px) {
-	.nav-mobile {
-		display: none;
-	}
-
-	.nav-desktop {
-		display: block;
-
-		&__box {
-			position: fixed;
-			top: 0;
-			z-index: 100;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 2em 2em;
-			background-color: rgba(0, 0, 0, 0.4);
-
-			&-left {
-				text-transform: uppercase;
-				font-size: 2.4rem;
-				&--logo {
-					color: #fff;
-				}
-			}
-
-			&-right {
-				text-transform: uppercase;
-				font-size: 2.4rem;
-				a {
-					padding: 0.5em;
-					color: #fff;
-				}
-			}
-		}
-	}
-}
-
 .trainers {
 	background-image: url('/dist/img/trainer-bg.jpg');
 	background-size: cover;
@@ -470,6 +431,126 @@ body {
 				height: 3rem;
 				font-size: 2rem;
 				padding: 5px 65px;
+			}
+		}
+	}
+}
+
+.contact-info {
+	background-color: #252233;
+	// padding: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&--item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: #fff;
+			padding: 3em;
+			// margin-left: 8em;
+
+			&-img {
+				margin-bottom: 0.5em;
+				&--img {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	background-color: #252233;
+	&__box {
+		padding: 2em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		color: #fff;
+		// padding: 2em;
+		&-p {
+			font-size: 2rem;
+		}
+
+		&-icon {
+			padding: 1em;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.trainers {
+		&__box {
+			margin-left: 2em;
+		}
+	}
+
+	.contact {
+		&__box {
+			flex-direction: row;
+			&-left {
+				margin-right: 2em;
+				width: 60%;
+				height: auto;
+			}
+
+			&-right {
+				width: 60%;
+
+				&-btn {
+					align-self: flex-end;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.nav-mobile {
+		display: none;
+	}
+
+	.nav-desktop {
+		display: block;
+
+		&__box {
+			position: fixed;
+			top: 0;
+			z-index: 100;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2em 2em;
+			background-color: rgba(0, 0, 0, 0.4);
+
+			&-left {
+				text-transform: uppercase;
+				font-size: 2.4rem;
+				&--logo {
+					color: #fff;
+				}
+			}
+
+			&-right {
+				text-transform: uppercase;
+				font-size: 2.4rem;
+				a {
+					padding: 0.5em;
+					color: #fff;
+				}
 			}
 		}
 	}
